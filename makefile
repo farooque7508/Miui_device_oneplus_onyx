@@ -7,7 +7,7 @@ local-zip-file     := stockrom.zip
 
 # All vendor apks needed
 local-phone-apps := AntHalService Bluetooth BluetoothExt BluetoothMidiService CertInstaller DiracManager KeyChain PacProcessor PrintSpooler \
-	shutdownlistener Stk telresources TimeService UserDictionaryProvider  \
+	shutdownlistener Stk telresources TimeService UserDictionaryProvider webview \
 
 local-phone-priv-apps := BackupRestoreConfirmation CellBroadcastReceiver CNEService com.qualcomm.location ExternalStorageProvider \
 	FusedLocation InputDevices ProxyHandler qcrilmsgtunnel SharedStorageBackup Shell  \
