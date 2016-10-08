@@ -2262,6 +2262,19 @@
     goto :goto_0
 .end method
 
+.method public showDialog(ZZ)V
+    .locals 2
+    .param p1, "keyguardShowing"    # Z
+    .param p2, "isDeviceProvisioned"    # Z
+
+    .prologue
+    const/4 v0, 0x0
+
+    invoke-virtual {p0, p1, p2, v0}, Lcom/android/server/policy/GlobalActions;->showDialog(ZZZ)V
+
+    return-void
+.end method
+
 .method public showDialog(ZZZ)V
     .locals 1
     .param p1, "keyguardShowing"    # Z

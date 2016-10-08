@@ -5848,6 +5848,42 @@
     goto :goto_0
 .end method
 
+.method private adjustCpuAbisForSharedUserLPw(Ljava/util/Set;Landroid/content/pm/PackageParser$Package;ZZ)V
+    .locals 6
+    .param p2, "scannedPackage"    # Landroid/content/pm/PackageParser$Package;
+    .param p3, "forceDexOpt"    # Z
+    .param p4, "deferDexOpt"    # Z
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Set",
+            "<",
+            "Lcom/android/server/pm/PackageSetting;",
+            ">;",
+            "Landroid/content/pm/PackageParser$Package;",
+            "ZZ)V"
+        }
+    .end annotation
+
+    .prologue
+    .local p1, "packagesForUser":Ljava/util/Set;, "Ljava/util/Set<Lcom/android/server/pm/PackageSetting;>;"
+    const/4 v5, 0x0
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-object v2, p2
+
+    move v3, p3
+
+    move v4, p4
+
+    invoke-direct/range {v0 .. v5}, Lcom/android/server/pm/PackageManagerService;->adjustCpuAbisForSharedUserLPw(Ljava/util/Set;Landroid/content/pm/PackageParser$Package;ZZZ)V
+
+    return-void
+.end method
+
 .method private adjustCpuAbisForSharedUserLPw(Ljava/util/Set;Landroid/content/pm/PackageParser$Package;ZZZ)V
     .locals 16
     .param p2, "scannedPackage"    # Landroid/content/pm/PackageParser$Package;
