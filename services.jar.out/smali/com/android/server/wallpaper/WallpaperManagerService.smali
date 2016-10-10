@@ -7487,6 +7487,8 @@
 
     move-result v7
 
+    const/4 v7, 0x0
+
     if-eqz v7, :cond_3
 
     .line 1092
