@@ -6,11 +6,15 @@
 local-zip-file     := stockrom.zip
 
 # All vendor apks needed
-local-phone-apps := AntHalService Bluetooth BluetoothExt BluetoothMidiService CertInstaller DiracManager KeyChain PacProcessor PrintSpooler \
-	shutdownlistener Stk telresources TimeService UserDictionaryProvider webview \
+local-phone-apps := AntHalService BasicDreams Bluetooth BluetoothExt BluetoothMidiService btmultisim BTtestmode CABLService \
+	CaptivePortalLogin CertInstaller DiracManager embms EngineeringMode EngSpecialTest fastdormancy Galaxy4 HoloSpiralWallpaper \
+	HTMLViewer KeyChain LiveWallpapers LogKitSdService NoiseField NVBackupUI PacProcessor PermissionUtil PhaseBeam PrintSpooler \
+	SdCardService shutdownlistener Stk telresources TimeService UserDictionaryProvider WAPPushManager webview WfdService WifiRfTestApk \
+	xdivert
 
-local-phone-priv-apps := BackupRestoreConfirmation CellBroadcastReceiver CNEService com.qualcomm.location DefaultContainerService \
-	ExternalStorageProvider FusedLocation InputDevices ProxyHandler qcrilmsgtunnel SharedStorageBackup Shell  \
+local-phone-priv-apps := BackupRestoreConfirmation CarrierConfig CellBroadcastReceiver CNEService com.qualcomm.location DefaultContainerService \
+	ExternalStorageProvider FusedLocation InputDevices OneTimeInitializer OPDeviceManager OPDeviceManagerProvider OPNetworkSetting \
+	OPWifiApSettings ProxyHandler qcrilmsgtunnel QtiTetherService SharedStorageBackup Shell
 
 local-density := XXHDPI
 local-target-bit := 32
