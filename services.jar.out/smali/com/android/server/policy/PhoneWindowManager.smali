@@ -26277,6 +26277,8 @@
 
     move-result v1
 
+    const/4 v1, 0x0
+
     if-eqz v1, :cond_3
 
     .line 1300
@@ -26345,15 +26347,15 @@
     :cond_4
     iget-object v1, p0, Lcom/android/server/policy/PhoneWindowManager;->mGlobalActions:Lcom/android/server/policy/GlobalActions;
 
-    invoke-virtual {p0}, Lcom/android/server/policy/PhoneWindowManager;->isKeyguardSecure()Z
+    #invoke-virtual {p0}, Lcom/android/server/policy/PhoneWindowManager;->isKeyguardSecure()Z
 
-    move-result v2
+    #move-result v2
 
     invoke-virtual {p0}, Lcom/android/server/policy/PhoneWindowManager;->isDeviceProvisioned()Z
 
     move-result v3
 
-    invoke-virtual {v1, v0, v2, v3}, Lcom/android/server/policy/GlobalActions;->showDialog(ZZZ)V
+    invoke-virtual {v1, v0, v3}, Lcom/android/server/policy/GlobalActions;->showDialog(ZZ)V
 
     goto :goto_0
 .end method
